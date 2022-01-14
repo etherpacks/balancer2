@@ -13,8 +13,7 @@ task('deploy-mock-balancer', 'deploy mock Balancer')
   const dapp = await dpack.Dapp.loadFromPack(pack, signer, hre.ethers)
   const vault = await dapp.types.Vault.deploy(deployer, weth_pack.objects.weth9.address, 1000, 1000)
   const weighted_pool_factory = await dapp.types.WeightedPoolFactory.deploy(vault.address)
-
-  const mockpack = structuredClone(pack)
+  const mockpack = JSON.parse(JSON.stringify(pack))
   mockpack.network = hre.network.name
   mockpack.objects.vault.address = vault.address
   mockpack.objects.weighted_pool_factory.address = weighted_pool_factory.address
