@@ -1,0 +1,42 @@
+{
+  "format": "dpack-1",
+  "network": "kovan",
+  "types": {
+    "Vault": {
+      "typename": "Vault",
+      "artifact": {
+        "/": "QmX8AbCticzw9nB81VjyVvL1UZa4j7KuHNf6sDBy1xtnuc"
+      }
+    },
+    "WeightedPoolFactory": {
+      "typename": "WeightedPoolFactory",
+      "artifact": {
+        "/": "QmerebHgjP41KsPEtrwGNM2Vw6KyWuFiBh44nCmCEXpHwG"
+      }
+    },
+    "WeightedPool": {
+      "typename": "WeightedPool",
+      "artifact": {
+        "/": "QmTMfSrC1nkJSqkpKxp1RZja58UaFG8A6NEYsMbwqUtyyz"
+      }
+    }
+  },
+  "objects": {
+    "vault": {
+      "objectname": "vault",
+      "address": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "typename": "Vault",
+      "artifact": {
+        "/": "QmX8AbCticzw9nB81VjyVvL1UZa4j7KuHNf6sDBy1xtnuc"
+      }
+    },
+    "weighted_pool_factory": {
+      "objectname": "weighted_pool_factory",
+      "address": "0x8E9aa87E45e92bad84D5F8DD1bff34Fb92637dE9",
+      "typename": "WeightedPoolFactory",
+      "artifact": {
+        "/": "QmerebHgjP41KsPEtrwGNM2Vw6KyWuFiBh44nCmCEXpHwG"
+      }
+    }
+  }
+}
