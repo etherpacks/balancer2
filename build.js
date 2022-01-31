@@ -48,7 +48,7 @@ async function build(network) {
   })
 
   const pack = await builder.build();
-  fs.writeFileSync(`./pack/balancer_${network}.dpack.json`, JSON.stringify(pack, null, 2));
+  fs.writeFileSync(`./pack/balancer2_${network}.dpack.json`, JSON.stringify(pack, null, 2));
 }
 
 build('ethereum')
