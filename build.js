@@ -25,16 +25,20 @@ async function build(network) {
     fs.writeFileSync(`./link/WeightedPool.json`, json(WeightedPool_artifact))
     fs.writeFileSync(`./link/WeightedPoolFactory.json`, json(WeightedPoolFactory_artifact))
     
-    
+
+    let alias = network;
+    if (network == 'ethereum') {
+	alias = 'mainnet';
+    }
   await builder.packObject({
     objectname: 'vault',
-    address: await balancer.getBalancerContractAddress('20210418-vault', 'Vault', network),
+    address: await balancer.getBalancerContractAddress('20210418-vault', 'Vault', alias),
     typename: 'Vault',
     artifact: Vault_artifact
   })
   await builder.packObject({
     objectname: 'weighted_pool_factory',
-    address: await balancer.getBalancerContractAddress('20210418-weighted-pool', 'WeightedPoolFactory', network),
+    address: await balancer.getBalancerContractAddress('20210418-weighted-pool', 'WeightedPoolFactory', alias),
     typename: 'WeightedPoolFactory',
     artifact: WeightedPoolFactory_artifact
   })
@@ -47,7 +51,7 @@ async function build(network) {
   fs.writeFileSync(`./pack/balancer_${network}.dpack.json`, JSON.stringify(pack, null, 2));
 }
 
-build('mainnet')
+build('ethereum')
 build('kovan')
 build('goerli')
 build('rinkeby')
