@@ -1,6 +1,6 @@
 {
   "format": "dpack-1",
-  "network": "mainnet",
+  "network": "ethereum",
   "types": {
     "Vault": {
       "typename": "Vault",
