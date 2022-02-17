@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const balancer = require('@balancer-labs/v2-deployments')
 
-const dpack = require('dpack')
+const dpack = require('@etherpacks/dpack')
 
 async function build(network) {
   const builder = new dpack.PackBuilder(network)
