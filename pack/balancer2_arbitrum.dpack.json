@@ -5,19 +5,19 @@
     "Vault": {
       "typename": "Vault",
       "artifact": {
-        "/": "bafybeiecqzvryeuqqhmzznuts6igxsifnc57yr6agvcbuhfrf3cywmr2u4"
+        "/": "bafkreidmgjlyoyyjqyne6jfphcmblmnowrk7heldmx77gevvmk5jyl7wo4"
       }
     },
     "WeightedPoolFactory": {
       "typename": "WeightedPoolFactory",
       "artifact": {
-        "/": "bafybeihvnjedzg2dol7uqxxc6gxhfbtaasn3zue4pp54b2zvwiyc2yuaum"
+        "/": "bafkreib642yoddlomgqmonay73mmc3nf6p6qf3cj6ylpgk4rtugid6shim"
       }
     },
     "WeightedPool": {
       "typename": "WeightedPool",
       "artifact": {
-        "/": "bafybeickrtmuimp2xxk3hqcyszh7piepig7aoanp5jpu5raro6rbyukd6e"
+        "/": "bafkreigxua4bz2idcrhditsfvwgrb5rqakngjpp7pnskkvtbuuvajom3ai"
       }
     }
   },
@@ -27,7 +27,7 @@
       "address": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
       "typename": "Vault",
       "artifact": {
-        "/": "bafybeiecqzvryeuqqhmzznuts6igxsifnc57yr6agvcbuhfrf3cywmr2u4"
+        "/": "bafkreidmgjlyoyyjqyne6jfphcmblmnowrk7heldmx77gevvmk5jyl7wo4"
       }
     },
     "weighted_pool_factory": {
@@ -35,7 +35,7 @@
       "address": "0x7dFdEF5f355096603419239CE743BfaF1120312B",
       "typename": "WeightedPoolFactory",
       "artifact": {
-        "/": "bafybeihvnjedzg2dol7uqxxc6gxhfbtaasn3zue4pp54b2zvwiyc2yuaum"
+        "/": "bafkreib642yoddlomgqmonay73mmc3nf6p6qf3cj6ylpgk4rtugid6shim"
       }
     }
   }
