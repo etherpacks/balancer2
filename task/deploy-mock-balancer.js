@@ -10,7 +10,7 @@ task('deploy-mock-balancer', 'deploy mock Balancer')
   const deployer = signer.address
   const weth_pack = args.weth_pack
   const pack = require('../pack/balancer2_ethereum.dpack.json')  // reference deployment for mocks
-  const dapp = await dpack.load(pack, hre.ethers)
+  const dapp = await dpack.load(pack, hre.ethers, signer)
   const vault = await dapp._types.Vault.deploy(deployer, weth_pack.objects.weth9.address, 1000, 1000)
   const weighted_pool_factory = await dapp._types.WeightedPoolFactory.deploy(vault.address)
   const mockpack = JSON.parse(JSON.stringify(pack))
